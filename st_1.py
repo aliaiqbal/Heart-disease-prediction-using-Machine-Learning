@@ -28,7 +28,7 @@ st.write(user_data)
 #ml models
 st.sidebar.selectbox('Select model', ('KNN','SVM'))
 model=["KNN","SVM"]
-if model=='KNN':#
+if model=='KNN':
  model=pickle.load(open('kNeighbor_classifier','rb'))
 else:
  model=pickle.load(open('SVM_model','rb'))
